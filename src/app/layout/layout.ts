@@ -12,6 +12,7 @@ import { MenuModule } from 'primeng/menu';
 })
 
 export class Layout {
+  private readonly router = inject(Router);
 
   navItems: MenuItem[] = [
     {
@@ -22,13 +23,7 @@ export class Layout {
       label: 'Component Gallery',
       icon: 'book',
     },
-    {
-      label: 'Documentation',
-      icon: 'file',
-    },
   ];
-
-  constructor(private router: Router) { }
 
   navigateTo(path: string): void {
     this.router.navigate([path]);
