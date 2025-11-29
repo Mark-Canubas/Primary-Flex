@@ -7,17 +7,16 @@ export const routes: Routes = [
 		pathMatch: 'full'
 	},
 	{
-		path: 'layout',
+		path: '',
 		loadComponent: () => import('./layout/layout').then(m => m.Layout),
 		children: [
 			{
-				path: '',
-				redirectTo: 'home',
-				pathMatch: 'full'
+				path: 'home',
+				loadComponent: () => import('./pages/home/home').then(m => m.Home),
 			},
 			{
-				path: 'home',
-				loadComponent: () => import('./pages/home/home').then(m => m.Home)
+				path: 'gallery',
+				loadComponent: () => import('./pages/component-gallery/component-gallery').then(m => m.ComponentGallery)
 			}
 		]
 	}

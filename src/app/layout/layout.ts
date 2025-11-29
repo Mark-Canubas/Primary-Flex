@@ -18,10 +18,12 @@ export class Layout {
     {
       label: 'Home',
       icon: 'home',
+      path: 'home'
     },
     {
       label: 'Component Gallery',
       icon: 'book',
+      path: 'gallery'
     },
   ];
 
