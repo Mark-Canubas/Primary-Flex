@@ -2,13 +2,14 @@ import { Component, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { Router } from '@angular/router';
 import { MenuItem } from 'primeng/api';
-import { MenuModule } from 'primeng/menu';
+import { PanelMenuModule } from 'primeng/panelmenu';
+
 
 @Component({
   selector: 'app-layout',
   standalone: true,
   templateUrl: './layout.html',
-  imports: [RouterOutlet, MenuModule],
+  imports: [RouterOutlet, PanelMenuModule],
 })
 
 export class Layout {
@@ -17,13 +18,20 @@ export class Layout {
   navItems: MenuItem[] = [
     {
       label: 'Home',
-      icon: 'home',
-      path: 'home'
+      icon: 'pi pi-home',
+      path: '',
+      command: () => this.navigateTo('')
     },
     {
       label: 'Component Gallery',
-      icon: 'book',
-      path: 'gallery'
+      icon: 'pi pi-book',
+      items: [
+        {
+          label: 'Form Actions',
+          icon: 'pi pi-th-large',
+          command: () => this.navigateTo('gallery')
+        }
+      ]
     },
   ];
 

@@ -12,17 +12,15 @@
     </div>
 
     <!-- Navigation -->
-    <div class="flex-1 py-2 px-3">
-      <p-menu [model]="navItems" [pt]="{root:'border-none!', list:'p-0!'}">
-        <ng-template pTemplate="item" let-item>
-          <a (click)="navigateTo(item.path)"
-            class="flex items-center gap-3 px-3 py-2.5 text-gray-700 hover:bg-gray-300 hover:text-gray-600 cursor-pointer rounded-lg transition-all duration-200 group">
-            <i [class]="'pi pi-' + item.icon + ' text-lg group-hover:scale-110 transition-transform'"></i>
-            <span class="font-medium">{{ item.label }}</span>
-          </a>
-        </ng-template>
-      </p-menu>
-    </div>
+    <p-panel-menu [model]="navItems" [pt]="{
+      root:'border-0! gap-0!',
+      panel:'border-0! p-0!',
+      submenuIcon:'order-1 ml-auto text-black!',
+      headerLink:'hover:bg-gray-200 text-black! rounded-lg!',
+      headerIcon:'text-black!',
+      itemIcon:'text-black!',
+      itemLink:'hover:bg-gray-200 text-black! rounded-lg!'
+    }"></p-panel-menu>
   </div>
 
   <!-- Main Content Area -->

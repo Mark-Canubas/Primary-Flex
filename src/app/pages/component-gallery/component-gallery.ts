@@ -9,6 +9,6 @@ import { ButtonModule } from 'primeng/button';
 export class ComponentGallery {
   filterButtons: string[] = [
     'All',
-    'Form',
+    'Form Actions',
   ];
 }
