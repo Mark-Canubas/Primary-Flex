@@ -3,11 +3,12 @@ import { SelectModule } from 'primeng/select';
 import { TagModule } from 'primeng/tag';
 import { DialogModule } from 'primeng/dialog';
 import { ButtonDirective } from "primeng/button";
-import { SelectDialogComponent } from "../../shared/component/select-dialog/select-dialog";
+import { SelectDialogComponent } from "../../shared/components/modal/select-dialog/select-dialog";
+import { StatsCardComponent } from '../../features/dashboard/components/stats-card/stats-card';
 
 @Component({
   selector: 'app-select',
-  imports: [SelectModule, TagModule, DialogModule, ButtonDirective, SelectDialogComponent],
+  imports: [SelectModule, TagModule, DialogModule, SelectDialogComponent, StatsCardComponent],
   templateUrl: './select.html',
 })
 export class Select {

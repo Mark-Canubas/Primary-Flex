@@ -25,13 +25,8 @@
               }
             ],
             "styles": [
-              "src/styles.css",
-              "node_modules/prismjs/themes/prism-okaidia.css"
-            ],
-            "scripts": [
-              "node_modules/prismjs/prism.js",
-              "node_modules/prismjs/components/prism-typescript.min.js"
-            ] 
+              "src/styles.css"
+            ]
           },
           "configurations": {
             "production": {
