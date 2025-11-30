@@ -27,9 +27,19 @@ export class Layout {
       icon: 'pi pi-book',
       items: [
         {
-          label: 'Form Actions',
-          icon: 'pi pi-th-large',
-          command: () => this.navigateTo('gallery')
+          label: 'Form',
+          items: [
+            {
+              label: 'Select',
+            },
+            {
+              label: 'Input',
+            },
+            {
+              label: 'MultiSelect',
+            }
+
+          ]
         }
       ]
     },

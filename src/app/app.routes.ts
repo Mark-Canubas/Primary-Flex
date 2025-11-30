@@ -14,10 +14,7 @@ export const routes: Routes = [
 				path: 'home',
 				loadComponent: () => import('./pages/home/home').then(m => m.Home),
 			},
-			{
-				path: 'gallery',
-				loadComponent: () => import('./pages/component-gallery/component-gallery').then(m => m.ComponentGallery)
-			}
+			
 		]
 	}
 ];
