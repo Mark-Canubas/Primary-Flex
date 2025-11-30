@@ -24,21 +24,14 @@ export class Layout {
     },
     {
       label: 'Component Gallery',
-      icon: 'pi pi-book',
       items: [
         {
           label: 'Form',
           items: [
             {
               label: 'Select',
-            },
-            {
-              label: 'Input',
-            },
-            {
-              label: 'MultiSelect',
+              command: () => this.navigateTo('select')
             }
-
           ]
         }
       ]
