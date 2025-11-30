@@ -1,0 +1,46 @@
+<div class="flex flex-col gap-4 max-w-6xl mx-auto">
+  <!-- Header Section -->
+  <div class="flex flex-row gap-5 bg-white rounded-lg shadow-sm border border-gray-200 p-5">
+    <div class="border-l-4 border-black"></div>
+    <div class="flex flex-col gap-3">
+      <h1 class="text-3xl font-bold text-black">Select Component</h1>
+      <p class="text-gray-600 text-lg leading-relaxed">
+        The Select component allows users to choose an option from a dropdown list. It is optimized for
+        mobile use,
+        providing a touch-friendly interface and adaptive design to enhance user experience on smaller
+        screens.
+      </p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-2 gap-4">
+    <div class="rounded-xl p-6 border border-gray-300 flex flex-col gap-4">
+      <!-- Title & Subtitle -->
+      <div class="flex flex-col gap-1 pr-10">
+        <h3 class="font-bold text-2xl text-black">Select</h3>
+        <p class="text-black text-sm">Overlapping Option List</p>
+      </div>
+      <!-- Code Snippet -->
+      <div class="bg-black text-gray-300 p-3 rounded-sm font-mono text-xs overflow-x-auto">
+        <pre class="whitespace-pre">{{ code }}</pre>
+      </div>
+
+      <!-- Tags -->
+      <div class="flex gap-2 flex-wrap">
+        <span class="px-3 py-1.5 bg-black text-gray-200 text-xs font-semibold rounded-md">primeng</span>
+        <span class="px-3 py-1.5 bg-black text-gray-200 text-xs font-semibold rounded-md">custom</span>
+      </div>
+
+      <!-- Action Button -->
+      <button pButton type="button" label="Show Full Documentation" icon="pi pi-arrow-right" iconPos="right"
+        class="w-full bg-gray-600 hover:bg-gray-700 border-0 text-white" (click)="visible.set(true)">
+      </button>
+    </div>
+  </div>
+
+  <!-- Select Dialog Component -->
+  <app-select-dialog [visible]="visible()" (visibleChange)="visible.set($event)" [textSample]="textSample"
+    [code]="code">
+  </app-select-dialog>
+
+</div>

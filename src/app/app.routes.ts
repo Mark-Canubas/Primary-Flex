@@ -16,7 +16,7 @@ export const routes: Routes = [
 			},
 			{
 				path:'select',
-				loadComponent: () => import('./shared/component/select/select').then(m => m.Select),
+				loadComponent: () => import('./pages/select/select').then(m => m.Select),
 			}
 
 		]
