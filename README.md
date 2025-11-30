@@ -1,59 +1,61 @@
 # MobilePrimengAdapter
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.3.
+A modular Angular project optimized for mobile, featuring custom Primeng integrations and a scalable architecture.
 
-## Development server
+## Features
+- **Mobile-first UI**: Touch-friendly, adaptive design for small screens.
+- **Custom Primeng Components**: Extended and styled Primeng UI elements for mobile use.
+- **Modular Architecture**: Clear separation of core services, shared components, feature modules, and layout.
+- **Reusable Components**: Shared library for buttons, modals, loaders, and more.
+- **Singleton Services**: Centralized authentication, API, and storage services.
+- **Guards & Interceptors**: Route protection and HTTP request/response handling.
+- **Lazy-loaded Features**: Dashboard, products, and authentication modules for performance.
+- **Global Styles & Themes**: SCSS-based theming and utility styles.
+- **Internationalization**: Ready for multiple languages via `assets/i18n`.
 
-To start a local development server, run:
-
-```bash
-ng serve
+## File Structure
+```
+src/
+├── app/
+│   ├── core/                          # Singleton services, guards, interceptors
+│   ├── shared/                        # Reusable components, directives, pipes
+│   ├── features/                      # Feature modules (lazy-loaded)
+│   ├── layout/                        # Layout components
+│   ├── app.component.ts               # Root component
+│   ├── app.config.ts                  # App configuration
+│   └── app.routes.ts                  # Main routing
+├── assets/                            # Static assets (images, icons, fonts, i18n)
+├── environments/                      # Environment configs
+└── styles/                            # Global styles
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## Usage
+- **Select Component**: Allows users to choose options from a dropdown, optimized for mobile.
+- **Stats Card**: Displays code snippets and tags, moved to dashboard for modularity.
+- **Dialog & Modal**: Custom dialog components for mobile overlays.
 
-## Code scaffolding
+## Development
+- Start: `ng serve`
+- Build: `ng build`
+- Test: `ng test`
+- Generate: `ng generate <schematic>`
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Important Behaviors
+- All components use Angular Standalone API for easy import and modularity.
+- Guards and interceptors are registered in `core` for global access.
+- Feature modules are lazy-loaded for performance.
+- Shared components are reusable across features.
+- Theming and styles are managed via SCSS in `styles/`.
+- Internationalization files are in `assets/i18n`.
 
-```bash
-ng generate component component-name
-```
+## Contributing
+1. Fork the repo and create a feature branch.
+2. Follow the file structure for new modules/components.
+3. Submit a pull request with a clear description.
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## License
+MIT
 
-```bash
-ng generate --help
-```
+---
 
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+For more details, see the Angular CLI documentation and Primeng guides.
