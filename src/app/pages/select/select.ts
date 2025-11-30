@@ -23,11 +23,17 @@ export class Select {
 
   ];
 
-  readonly code = `[pt]="{
+readonly code = `<p-select 
+  [options]="textSample()" 
+  optionLabel="name" 
+  placeholder="Select Option" 
+  class="w-full"
+  [pt]="{
       pcOverlay: {
-          root: 'w-full!'
+        root: 'w-full!'
       },
       optionLabel:'break-words! whitespace-normal! w-full!'
-  }"`;
+  }">
+  </p-select>`;
 
 }
