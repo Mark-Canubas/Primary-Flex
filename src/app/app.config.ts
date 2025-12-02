@@ -15,9 +15,6 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideAnimationsAsync(),
     providePrimeNG({
-      pt: {
-        select: SelectPt
-      },
       theme: {
         preset: Noir,
         options: {

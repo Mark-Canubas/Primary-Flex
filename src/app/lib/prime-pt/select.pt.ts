@@ -1,4 +1,4 @@
-import { contentChild, signal } from "@angular/core";
+import { signal } from "@angular/core";
 import { PassThroughContext } from "primeng/api";
 import { Select, SelectPassThrough } from "primeng/select";
 

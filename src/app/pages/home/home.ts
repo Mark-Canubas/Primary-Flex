@@ -1,13 +1,18 @@
 import { Component } from '@angular/core';
+import { SelectModule } from 'primeng/select';
 import { Select } from 'primeng/select';
-import { MultiSelectModule } from 'primeng/multiselect';
+import { MultiSelect } from "primeng/multiselect";
+import { SelectPt } from '../../lib/prime-pt/select.pt';
+import { MultiSelectPt } from '../../lib/prime-pt/multiselect.pt';
 @Component({
   selector: 'app-home',
-  imports: [Select, MultiSelectModule],
+  imports: [SelectModule, Select, MultiSelect],
   templateUrl: './home.html',
 })
 export class Home {
 
+  selectPt = SelectPt;
+  multiSelectPt = MultiSelectPt;
 
   yourOptions = [
     { label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo sed massa cursus facilisis. Ut id lacinia felis. Nulla eget nibh dictum, dignissim mauris quis, efficitur urna.', value: '1' },

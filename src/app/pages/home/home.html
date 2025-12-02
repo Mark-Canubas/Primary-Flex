@@ -17,17 +17,15 @@
                 <i class="pi pi-code text-xs"></i>
                 Angular Framework
             </span>
+
             <span
                 class="inline-flex items-center gap-2 px-4 py-2 bg-gray-900 text-white text-sm font-medium rounded-lg">
                 <i class="pi pi-palette text-xs"></i>
                 PrimeNG UI Library
             </span>
         </div>
+        <p-select [options]="yourOptions" [filter]="true" [pt]="selectPt"></p-select>
 
-        <p-select [options]="yourOptions" [filter]="true">
-        </p-select>
-
-
-
+        <p-multiselect [options]="yourOptions" [filter]="true" [pt]="multiSelectPt"></p-multiselect>
     </div>
 </div>
