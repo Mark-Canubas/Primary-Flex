@@ -18,7 +18,6 @@ export const routes: Routes = [
 				path:'select',
 				loadComponent: () => import('./pages/select/select').then(m => m.Select),
 			}
-
 		]
 	}
 ];

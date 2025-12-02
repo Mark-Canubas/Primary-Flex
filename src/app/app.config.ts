@@ -4,6 +4,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { providePrimeNG } from 'primeng/config';
 import { Noir } from './themes/noir';
 
+import { SelectPt } from './lib/prime-pt/select.pt';
+
 import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
@@ -13,6 +15,9 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideAnimationsAsync(),
     providePrimeNG({
+      pt: {
+        select: SelectPt
+      },
       theme: {
         preset: Noir,
         options: {
