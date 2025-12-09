@@ -43,12 +43,12 @@ export const MultiSelectPt: MultiSelectPassThrough = {
                 overlayContent.classList.add(
                     'max-xl:max-h-full!', 'max-xl:absolute', 'max-xl:bottom-0',
                     'max-sm:w-full', 'max-xl:w-[60vw]', 'transform',
-                    'max-xl:left-1/2!', 'max-xl:-translate-x-1/2!', 'max-xl:h-[80vh]!'
+                    'max-xl:left-1/2!', 'max-xl:-translate-x-1/2!', 'max-xl:max-h-[80vh]!'
                 );
             }
         }
         return {
-            class: 'max-xl:h-full! max-xl:overflow-hidden! max-xl:h-[80vh]! max-xl:flex! max-xl:flex-col! max-xl:rounded-b-none!'
+            class: 'max-xl:h-full! max-xl:overflow-hidden! max-xl:max-h-[80vh]! max-xl:flex! max-xl:flex-col! max-xl:rounded-b-none!'
         }
     },
     header:'px-3!',

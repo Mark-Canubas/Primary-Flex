@@ -26,9 +26,7 @@ export const SelectPt: SelectPassThrough = {
     },
     pcOverlay: {
         root: 'w-full! max-xl:h-full! max-xl:top-0! max-xl:left-0! max-xl:bg-black/40 max-xl:mt-0!',
-        content: 'max-xl:max-h-full! max-xl:absolute max-xl:bottom-0 max-sm:w-full max-xl:w-[60vw]' +
-            'transform max-xl:left-1/2! max-xl:-translate-x-1/2! [&>.p-select-overlay]:h-full! [&>.p-select-overlay]:overflow-hidden! max-xl:[&>.p-select-overlay]:rounded-b-none!' +
-            ' max-xl:[&>.p-select-overlay]:h-[80vh]! max-xl:[&>.p-select-overlay]:flex! max-xl:[&>.p-select-overlay]:flex-col!',
+        content: 'max-xl:max-h-full! max-xl:absolute max-xl:bottom-0 max-sm:w-full max-xl:w-[60vw] transform max-xl:left-1/2! max-xl:-translate-x-1/2! [&>.p-select-overlay]:h-full! [&>.p-select-overlay]:overflow-hidden! max-xl:[&>.p-select-overlay]:rounded-b-none! max-xl:[&>.p-select-overlay]:max-h-[80vh]! max-xl:[&>.p-select-overlay]:flex! max-xl:[&>.p-select-overlay]:flex-col!',
 
     },
     listContainer: 'max-xl:max-h-full! max-xl:flex-1! px-0! [&>.p-select-list]:px-0!',
