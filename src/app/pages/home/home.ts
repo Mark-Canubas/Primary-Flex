@@ -4,15 +4,18 @@ import { Select } from 'primeng/select';
 import { MultiSelect } from "primeng/multiselect";
 import { SelectPt } from '../../lib/prime-pt/select.pt';
 import { MultiSelectPt } from '../../lib/prime-pt/multiselect.pt';
+import { ButtonModule } from "primeng/button";
+import { ButtonPt } from '../../lib/prime-pt/button.pt';
 @Component({
   selector: 'app-home',
-  imports: [SelectModule, Select, MultiSelect],
+  imports: [SelectModule, Select, MultiSelect, ButtonModule],
   templateUrl: './home.html',
 })
 export class Home {
 
   selectPt = SelectPt;
   multiSelectPt = MultiSelectPt;
+  buttonPt = ButtonPt;
 
   yourOptions = [
     { label: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vitae justo sed massa cursus facilisis. Ut id lacinia felis. Nulla eget nibh dictum, dignissim mauris quis, efficitur urna.', value: '1' },
