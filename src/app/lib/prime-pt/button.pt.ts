@@ -1,20 +1,18 @@
-import { NgStyle } from '@angular/common';
 import { PassThroughContext } from 'primeng/api';
 import { Button, ButtonPassThrough } from 'primeng/button';
 
 const tw = {
     baseHeight: 'h-full!',
-    baseWidth: 'md:w-fit! w-full! ',
+    baseWidth: 'md:w-fit! w-full!',
     baseText: 'md:text-base! text-xs!',
 
     custom: {
-        // Border styles
         bordered: 'border! border-gray-400!',
 
         rounded: 'rounded-2xl!',
         squared: 'rounded-md!',
 
-        iconSize: 'md:text-lg! text-xs!',
+        iconSize: 'md:text-xl! text-xs!',
     },
 };
 
@@ -35,6 +33,7 @@ export const ButtonPt: ButtonPassThrough = {
 
         return { class: `${base} ${classes} ${styleClass}` };
     },
+    
     icon: (context: PassThroughContext<Button>) => {
         const instance = context.instance as any;
         const styleClass = instance.styleClass || '';
