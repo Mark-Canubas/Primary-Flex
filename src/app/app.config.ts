@@ -7,6 +7,8 @@ import { Noir } from './themes/noir';
 import { routes } from './app.routes';
 import { MultiSelect } from 'primeng/multiselect';
 
+import { CalendarPt } from './lib/prime-pt/calendar.pt';
+
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
@@ -14,6 +16,9 @@ export const appConfig: ApplicationConfig = {
     provideRouter(routes),
     provideAnimationsAsync(),
     providePrimeNG({
+      pt: {
+        datepicker: CalendarPt
+      },
       theme: {
         preset: Noir,
         options: {

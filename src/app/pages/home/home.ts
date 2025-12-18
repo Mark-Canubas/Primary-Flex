@@ -6,9 +6,10 @@ import { SelectPt } from '../../lib/prime-pt/select.pt';
 import { MultiSelectPt } from '../../lib/prime-pt/multiselect.pt';
 import { ButtonModule } from "primeng/button";
 import { ButtonPt } from '../../lib/prime-pt/button.pt';
+import { DatePickerModule } from 'primeng/datepicker';
 @Component({
   selector: 'app-home',
-  imports: [SelectModule, Select, MultiSelect, ButtonModule],
+  imports: [SelectModule, Select, MultiSelect, ButtonModule, DatePickerModule],
   templateUrl: './home.html',
 })
 export class Home {
