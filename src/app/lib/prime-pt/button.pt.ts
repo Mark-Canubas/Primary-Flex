@@ -21,7 +21,6 @@ export const ButtonPt: ButtonPassThrough = {
         const instance = context.instance as any;
 
         const styleClass = instance.styleClass || '';
-        // const rounded = instance.class?.includes('btn-rounded') || false;
         const hasBorder = styleClass.includes('btn-border');
         const rounded = styleClass.includes('btn-rounded');
 
